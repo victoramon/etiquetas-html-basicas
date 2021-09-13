@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Imagenes, tablas y forms</title>
+    </head>
+    <body>
+        <h1>Imagenes, tablas y forms</h1>
+        <h3>Imagenes</h3>
+       
+        <!-- 
+        en src debemos indicar la fuenta de la imagen
+        en alt debe ir una descripcion de la imagen, la cual se cargara si no se encuentra la imagen y tambien ayuda a las personas con problemas de la vista ya que ese texto es leido por las tabletas electronicas.
+        title nos sirve para poner un titulo a la imagen
+        width y height nos sirven para determinar el largo y ancho de una imagen 
+        -->
+
+        <img src="https://cdn.masmovil.es/embed/91863ced0442281c5585eb81761600709034/MME_130320_Por-que-deberias-invertir-en-videojuegos-1.jpg?imagick=1&size=1250" width="100" height="100">
+
+        <img src="446935.jpg" alt="Soldado de COD" title="Soldado de COD" height="100">
+        <!-- recomendable usar solo una de las anteriores -->
+        <h3>Tablas</h3>
+        <table border="1">
+            <tr> 
+                <th>Horario</th>
+                <th>Materia</th>
+            </tr>
+            <tr>
+                <td>09:00 - 10:00</td>        
+                <td>Programación</td>
+            </tr>
+            <tr>
+                <td>10:00 - 1:00</td>
+                <td>Algoritmos</td>
+            </tr>
+            <tr>
+                <td>11:00 - 13:00</td>
+                <td>Programación orientada a objetos</td>
+            </tr>
+        </table>
+
+        <hr />
+        <h3>Mi horario de clases</h3>
+        <!-- Encabezados= horario, lunes, martes, miercoles... -->
+         <!-- -Por lo menos 5 row sin contar el encabezado -->
+         <table border="1">
+            <tr>
+                <th>Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td>09:30 - 10:00</td>
+                <td rowspan="2">Bienvenida</td>
+                <td>Bienvenida</td>
+                <td>Bienvenida</td>
+                <td>Bienvenida</td>
+                <td>Bienvenida</td>
+            </tr>
+            <tr>
+                <td>10:00 - 13:00</td>
+                <td>Programación y codigos</td>
+                <td>Programación y codigos</td>
+                <td>Programación y codigos</td>
+                <td>Programación y codigos</td>
+            </tr>
+            <tr>
+                <td>13:00 - 14:00</td>
+                <th colspan="5">Hora de comida</th>
+            </tr>
+            <tr>
+                <td>14:00 - 16:00</td>
+                <td>Maquetacion</td>
+                <td>Maquetacion</td>
+                <td>Maquetacion</td>
+                <td>Maquetacion</td>
+                <td>Maquetacion</td>
+            </tr>
+            <tr>
+                <td>16:00 - 17:30</td>
+                <td>Dudas y reflexion</td>
+                <td>Dudas y reflexion</td>
+                <td>Dudas y reflexion</td>
+                <td colspan="2">Dudas y reflexion</td>
+            </tr>
+         </table>
+         <!-- 
+            "colspan=" es para expandir o fusionar celdas a los lados
+            "rowspan=" es para expandir hacia abajo
+        -->
+        <hr />
+        <h3>Ejercicio 2</h3>
+        <table border="1">
+            <tr>
+                <td>Rojo</td>
+                <td colspan="2">Verde</td>
+            </tr>
+            <tr>
+                <td>Café</td>
+                <td>Marrón</td>
+                <td>Tinto</td>
+            </tr>
+            <tr>
+                <td colspan="3">Naranja</td>
+            </tr>
+            <tr>
+                <td colspan="2">Blanco</td>
+                <td>Negro</td>
+            </tr>
+        </table>
+    </body>
+</html>
